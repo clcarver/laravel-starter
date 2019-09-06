@@ -1,0 +1,68 @@
+$spaces: (0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.25, 2.5, 2.75, 3); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right); // Leave this variable alone
+
+@each $space in $spaces {
+    $i: index($spaces, $space);
+    @each $side in $sides {
+        .m#{str-slice($side, 0, 1)}-#{$i} {
+            margin-#{$side}: #{$space}rem !important;
+        }
+
+        .p#{str-slice($side, 0, 1)}-#{$i} {
+            padding-#{$side}: #{$space}rem !important;
+        }
+    }
+}
+
+
+.navbar-text {
+    outline: none;
+    &:active {
+        text-decoration: none;
+        //color: #000 !important;
+    };
+    &:focus {
+        text-decoration: none;
+        //color: #fff !important;
+        background-color: transparent !important;
+    };
+    &:visited {
+        text-decoration: none;
+        //color: #000;
+    };
+    &:hover {
+        text-decoration: none;
+        //color: #fff !important;
+        background-color: transparent !important;
+    }
+}
+
+.d-flex {
+    display: flex !important;
+}
+.justify-between {
+    justify-content: space-between !important;
+}
+
+.justify-center {
+    justify-content: center !important;
+}
+
+.items-center {
+    align-items: center !important;
+}
+
+.content-center {
+    align-content: center !important;
+}
+
+.grow-1 {
+    flex-grow: 1;
+}
+
+.card-hover {
+    &:hover {
+        background-color: $blue-100;
+        cursor: pointer;
+    }
+}
