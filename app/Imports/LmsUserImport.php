@@ -5,7 +5,7 @@ namespace App\Imports;
 
 
 use App\LmsUser;
-use App\Registration;
+use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithBatchInserts;
@@ -16,7 +16,7 @@ use PhpOffice\PhpSpreadsheet\Shared\Date;
 
 class LmsUserImport implements ToModel, WithHeadingRow, WithChunkReading, WithBatchInserts, ShouldQueue, WithEvents
 {
-    use \Illuminate\Bus\Queueable;
+    use Queueable;
 
     /**
      * @param array $row
@@ -38,19 +38,22 @@ class LmsUserImport implements ToModel, WithHeadingRow, WithChunkReading, WithBa
             $shift = $row['user_secondary_org3'];
 
         return new LmsUser([
-            'user_id' => $row['user_number'],
-            'first_name' => $row['delivery_method'],
-            'last_name' => $row['location_name'],
-            'is_active' => $row['participant_count'],
-            'account' => $row['course_name'],
-            'lms_role' => $row['employee_id'],
-            'domain' => $row['first_name'],
-            'organization' => $row['last_name'],
-            'code' => Date::excelToDateTimeObject($row['registration_date'])->format('Y-m-d'),
-            'position' => $row['managers_employee_number'],
-            'email' => $row['manager_full_name'],
-            'manager_id' => Date::excelToDateTimeObject($row['start_date'])->format('Y-m-d H:i:s'),
-            'manager_first_name' => Date::excelToDateTimeObject($row['end_date'])->format('Y-m-d H:i:s'),
+            'id' => $row['user_number'],
+            'first_name' => $row['first_name'],
+            'last_name' => $row['last_name'],
+            'account' => $row['user_name'],
+            'lms_role' => $row['user_primary_security_role'],
+            'domain' => $row['user_primary_domain'],
+            'organization' => $row['organization'],
+            'code' => $row['code'],
+            'position' => $row['position'],
+            'email' => $row['email'],
+            'manager_id' => $row['managers_employee_number'],
+            'manager_first_name' => $row['manager_first_name'],
+            'manager_last_name' => $row['manager_last_name'],
+            'manager_email' => $row['manager_email'],
+            'start_date' => Date::excelToDateTimeObject($row['user_start_date'])->format('Y-m-d'),
+            'shift' => $this->shift($shift)
         ]);
     }
 
@@ -59,7 +62,7 @@ class LmsUserImport implements ToModel, WithHeadingRow, WithChunkReading, WithBa
      */
     public function chunkSize(): int
     {
-        return 50;
+        return 25;
     }
 
     /**
@@ -67,7 +70,7 @@ class LmsUserImport implements ToModel, WithHeadingRow, WithChunkReading, WithBa
      */
     public function batchSize(): int
     {
-        return 50;
+        return 25;
     }
 
     /**

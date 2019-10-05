@@ -6,7 +6,9 @@ namespace App\Http\Controllers;
 
 use App\CompletedActivities;
 use App\Imports\CompletedActivitiesImport;
+use App\Imports\LmsUserImport;
 use App\Imports\RegistrationImport;
+use App\LmsUser;
 use App\Registration;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -22,6 +24,7 @@ class ExcelUploadController extends Controller
         foreach ($request->file('dropFiles') as $file) {
             $file->move(storage_path() . '/reports/', $file->getClientOriginalName());
             $run[] = $file->getClientOriginalName();
+            $test[$file->getClientOriginalName()] = $file;
         }
 
         foreach ($run as $item) {
@@ -33,6 +36,11 @@ class ExcelUploadController extends Controller
             if($item == 'Class_Registrations_Report.xlsx') {
                 Registration::truncate();
                 Excel::import(new RegistrationImport(), storage_path() . '/reports/' . $item);
+            }
+
+            if($item == 'Employee_Data_Report.xlsx') {
+                LmsUser::truncate();
+                Excel::import(new LmsUserImport(), storage_path() . '/reports/' . $item);
             }
         }
 //        Excel::import(new CompletedActivitiesImport(), asset('reports/Facilities_Learning_Activity_Completion_Report.xlsx'));

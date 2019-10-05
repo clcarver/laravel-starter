@@ -6,6 +6,9 @@
                 <p class="subtitle is-6">{{ location }}</p>
             </header>
             <section class="modal-card-body">
+                <div v-if="isLoading">
+                    <img src="/images/skeleton.gif" alt="loading...">
+                </div>
                 <b-table :data="data" :loading="isLoading">
                     <template slot-scope="props">
                         <b-table-column field="first_name" label="First Name">
