@@ -1,7 +1,16 @@
 @import "~bulma/sass/utilities/_all";
 
+@import "mixins";
 @import "colors";
+@import "variables";
+
 @import "helpers";
+
+//@import "fullcalendar";
+@import "~@fullcalendar/core/main.css";
+@import '~@fullcalendar/daygrid/main.css';
 
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
+
+

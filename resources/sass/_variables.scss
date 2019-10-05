@@ -1,0 +1,224 @@
+//$body-color: $blue-100;
+
+$border-width: 1px;
+$border-radius: 0.1875rem;
+$border-color: $gray-400;
+
+$card-spacer-y: 0.9375rem;
+$card-spacer-x: 1.25rem;
+$card-border-width: $border-width;
+$card-border-radius: $border-radius;
+$card-border-color: rgba($black, 0.125);
+$card-inner-border-radius: $card-border-radius - rem-calc($card-border-width);
+$card-cap-bg: rgba($black, 0.02);
+$card-bg: $white;
+
+$table-scrollable-max-height: 22.5rem !default;
+
+$table-cell-padding-xl: 1.25rem $card-spacer-x !default;
+$table-cell-padding-lg: 1rem $card-spacer-x !default;
+$table-cell-padding: 0.75rem $card-spacer-x;
+$table-cell-padding-sm: 0.625rem $card-spacer-x;
+$table-cell-padding-xs: 0.5rem $card-spacer-x !default;
+
+$table-bg: transparent;
+$table-accent-bg: rgba($black, .02);
+$table-hover-bg: rgba($black, .03);
+$table-active-bg: rgba($black, .015);
+
+$table-border-width: $border-width;
+$table-border-color: $gray-400;
+
+$table-head-bg: $gray-200;
+//$table-head-color: $body-color;
+$table-head-border-color: darken($table-border-color, 15%) !default;
+
+$table-dark-bg: $gray-900;
+$table-dark-accent-bg: rgba($white, 0.05);
+$table-dark-hover-bg: rgba($white, 0.075);
+$table-dark-border-color: rgba($white, 0.35);
+$table-dark-color: $white;
+$table-dark-head-border-color: rgba($white, 0.5) !default;
+
+$table-striped-order: odd;
+
+$fullcalendar-bg: $card-bg !default;
+
+$fullcalendar-event-bg: $color-blue-600 !default;
+$fullcalendar-event-color: $white !default;
+$fullcalendar-event-border-width: $border-width !default;
+$fullcalendar-event-border-color: $color-blue-600 !default;
+
+$fullcalendar-event-spacer: 0.5rem !default;
+$fullcalendar-event-padding-y: 0.25rem !default;
+$fullcalendar-event-padding-x: 0.5rem !default;
+
+$fullcalendar-event-resizer-size-h: 0.5rem !default;
+$fullcalendar-event-resizer-size-v: 0.5rem !default;
+
+$fullcalendar-today-bg: $color-success-50 !default;
+$fullcalendar-bgevent-bg: rgba($color-success-300, 0.3) !default;
+$fullcalendar-nonbusiness-bg: rgba($gray-400, 0.3) !default;
+$fullcalendar-highlight-bg: rgba($gray-400, 0.3) !default;
+$fullcalendar-weekday-bg: $gray-100 !default;
+//$fullcalendar-weekday-color: rgba($body-color, 0.5) !default;
+
+$spacer: 1.25rem;
+$spacers: ();
+$spacers: map-merge((
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3)
+), $spacers);
+
+$transition-base: all .2s ease-in-out !default;
+$transition-fade: opacity .15s linear !default;
+$transition-collapse: height .35s ease !default;
+
+// Transition timers
+$component-transition-timer: 0.15s !default;
+$component-transition-delay: 0.15s !default;
+$font-size-base:              1rem !default;
+$icon-font-family: 'Material Icons';
+$icon-font-size: 1rem !default;
+
+// Font sizes
+$font-size-base:             0.8125rem; // Assumes the browser default, typically `16px`
+$font-size-lg:               ($font-size-base + 0.0625rem);
+$font-size-sm:               ($font-size-base - 0.0625rem);
+$font-size-xs:               ($font-size-base - (0.0625rem * 2)) !default;
+
+$h1-font-size:               ($font-size-base + (0.125rem * 6));
+$h2-font-size:               ($font-size-base + (0.125rem * 5));
+$h3-font-size:               ($font-size-base + (0.125rem * 4));
+$h4-font-size:               ($font-size-base + (0.125rem * 3));
+$h5-font-size:               ($font-size-base + (0.125rem * 2));
+$h6-font-size:               ($font-size-base + 0.125rem);
+
+$line-height-base:            1.5 !default;
+// Line heights
+$line-height-lg:             1.4286;
+$line-height-sm:             1.6667;
+$line-height-xs:             1.82 !default;
+
+// Computed line heights (custom vars)
+$line-height-computed:       $font-size-base * $line-height-base !default;
+$line-height-computed-lg:    $font-size-lg * $line-height-lg !default;
+$line-height-computed-sm:    $font-size-sm * $line-height-sm !default;
+
+$headings-line-height:       $line-height-base;
+
+$input-btn-padding-y:         .375rem !default;
+$input-btn-padding-x:         .75rem !default;
+$input-btn-line-height:       $line-height-base !default;
+
+$input-btn-focus-width:       .2rem !default;
+
+$input-btn-padding-y-sm:      .25rem !default;
+$input-btn-padding-x-sm:      .5rem !default;
+
+$input-btn-padding-y-lg:      .5rem !default;
+$input-btn-padding-x-lg:      1rem !default;
+
+
+$input-btn-border-width:      $border-width !default;
+$btn-border-width:                 $input-btn-border-width;
+$btn-border-radius:                $border-radius;
+$cursor-disabled:                         default !default;
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+//$btn-light-color:                  $body-color !default;
+$btn-light-bg:                     $gray-100 !default;
+$btn-light-border-color:           $gray-400 !default;
+
+$btn-padding-y:               $input-btn-padding-y !default;
+$btn-padding-x:               $input-btn-padding-x !default;
+$btn-line-height:             $input-btn-line-height !default;
+
+$btn-padding-y-sm:            $input-btn-padding-y-sm !default;
+$btn-padding-x-sm:            $input-btn-padding-x-sm !default;
+
+$btn-padding-y-lg:            $input-btn-padding-y-lg !default;
+$btn-padding-x-lg:            $input-btn-padding-x-lg !default;
+
+//$btn-light-hover-color:            $btn-light-color !default;
+//$btn-light-hover-bg:               $gray-200 !default;
+//$btn-light-hover-border-color:     $btn-light-border-color !default;
+
+//$btn-light-active-color:           $btn-light-hover-color !default;
+//$btn-light-active-bg:              $btn-light-hover-bg !default;
+//$btn-light-active-border-color:    $btn-light-hover-border-color !default;
+
+$btn-dark-hover-box-shadow:        0 0 0 62.5rem rgba($black, 0.075) inset !default;
+$btn-dark-active-box-shadow:       0 0 0 62.5rem rgba($black, 0.125) inset !default;
+$btn-disabled-opacity:             .65;
+
+
+$popover-font-size:            $font-size-base;
+$popover-bg:                   $white;
+$popover-max-width:            276px;
+$popover-border-width:         $border-width;
+$popover-border-color:         rgba($black, 0.15);
+$popover-border-radius:        $border-radius;
+$popover-box-shadow:           0 0.25rem 0.5rem rgba($black, 0.1);
+
+$popover-header-bg:            transparent;
+$popover-header-padding-y:     0.9375rem;
+$popover-header-padding-x:     $popover-header-padding-y;
+
+//$popover-body-color:           $body-color;
+$popover-body-padding-y:       $popover-header-padding-x;
+$popover-body-padding-x:       $popover-header-padding-x;
+
+$popover-arrow-width:          0.75rem;
+$popover-arrow-height:         0.375rem;
+$popover-arrow-color:          $popover-bg;
+
+//$popover-arrow-outer-color:    fade-in($popover-border-color, .05);
+
+$zindex-dropdown:          1000;
+$zindex-sticky:            1020;
+$zindex-fixed:             1030;
+$zindex-modal-backdrop:    1040;
+$zindex-modal:             1050;
+$zindex-popover:           1060;
+$zindex-tooltip:           1070;
+
+$element-spacer-x:                        map-get($spacers, 2) !default;
+
+$font-weight-thin:           100 !default;
+$font-weight-light:          300;
+$font-weight-normal:         400;
+$font-weight-semibold:       500 !default;
+$font-weight-bold:           700;
+$font-weight-black:          900 !default;
+
+$border-radius-circle:      50% !default;
+
+$grid-breakpoints: (
+    xs:    0,
+    sm:    576px,
+    md:    768px,
+    lg:    992px,
+    xl:    1200px
+);
+
+$tooltip-font-size:            $font-size-base;
+$tooltip-max-width:            200px;
+$tooltip-color:                $white;
+$tooltip-bg:                   $black;
+$tooltip-border-radius:        $border-radius;
+$tooltip-opacity:              0.9;
+$tooltip-padding-y:            0.5rem;
+$tooltip-padding-x:            0.75rem;
+$tooltip-margin:               0.3125rem;
+
+$tooltip-arrow-width:          0.5rem;
+$tooltip-arrow-height:         0.25rem;
+$tooltip-arrow-color:          $tooltip-bg;
+
+$badge-mark-size:               0.5rem !default;

@@ -2,14 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="145418ae-82c8-436f-8da4-dc247b588d99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/learning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/learning.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ExcelUploadController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/RegistrationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ScheduleController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Imports/LmsUserImport.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Imports/RegistrationImport.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/LmsUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Registration.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/modals/registrationDetails.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/pages/safety/dashboard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/pages/safety/group.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/pages/safety/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/pages/schedule/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/pages/uploads/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/_fullcalendar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/dist/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/dist/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/welcome.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/welcome.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/router/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/router/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_helpers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_helpers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -151,23 +175,27 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1QL8DZjFznxBqmhpKgqCS0H73LD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Middleware" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/sass" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chris\Projects\learning\resources\sass" />
       <recent name="C:\Users\chris\Projects\learning\app\Http\Middleware" />
       <recent name="C:\Users\chris\Projects\learning\app" />
       <recent name="C:\Users\chris\Projects\learning\app\Exceptions" />
       <recent name="C:\Users\chris\Projects\learning\resources\js\components" />
-      <recent name="C:\Users\chris\Projects\learning\resources\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -203,6 +231,17 @@
       <workItem from="1567687753098" duration="8432000" />
       <workItem from="1567769019729" duration="17829000" />
       <workItem from="1569001727613" duration="805000" />
+      <workItem from="1569241760019" duration="11828000" />
+      <workItem from="1569323399241" duration="40000" />
+      <workItem from="1569323464107" duration="4153000" />
+      <workItem from="1569409826353" duration="12342000" />
+      <workItem from="1569495246469" duration="5254000" />
+      <workItem from="1569584783570" duration="11155000" />
+      <workItem from="1569842984966" duration="932000" />
+      <workItem from="1570041127449" duration="409000" />
+      <workItem from="1570041619329" duration="3419000" />
+      <workItem from="1570101495580" duration="9223000" />
+      <workItem from="1570187649791" duration="941000" />
     </task>
     <servers />
   </component>
@@ -214,7 +253,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

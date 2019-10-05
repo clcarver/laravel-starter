@@ -15,7 +15,7 @@
     <title>Learning Dashboard</title>
 
     <!-- Fonts -->
-    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.4.95/css/materialdesignicons.min.css">
 
     <link rel="stylesheet" href="{{ mix('dist/css/app.css') }}">
 </head>

@@ -22,6 +22,12 @@ Route::group(['middleware' => 'auth:api'], function () {
 
     Route::patch('settings/profile', 'Settings\ProfileController@update');
     Route::patch('settings/password', 'Settings\PasswordController@update');
+
+    Route::post('/excel', 'ExcelUploadController@store');
+
+    Route::get('/schedule', 'ScheduleController@index');
+
+    Route::get('/lms/registration/{code}', 'RegistrationController@show');
 });
 
 Route::group(['middleware' => 'guest:api'], function () {
