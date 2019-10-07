@@ -16,7 +16,7 @@ class ScheduleController extends Controller
             DB::raw('course_name as title'),
             DB::raw('start_date as start'),
             DB::raw('end_date as end')
-        ])->whereBetween('start_date', ['2019-09-27 00:00:00', '2019-11-30 23:59:59'])
+        ])->whereBetween('start_date', [request('from'), request('to')])
             ->distinct()
             ->get()->transform(function($item) {
                 return array_merge($item->toArray(), [

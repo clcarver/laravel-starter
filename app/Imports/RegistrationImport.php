@@ -31,7 +31,7 @@ class RegistrationImport implements ToModel, WithHeadingRow, WithChunkReading, W
             'location' => $row['location_name'],
             'participant_count' => $row['participant_count'],
             'course_name' => $row['course_name'],
-            'employee_id' => $row['employee_id'],
+            'user_id' => $row['employee_id'],
             'first_name' => $row['first_name'],
             'last_name' => $row['last_name'],
             'registration_date' => Date::excelToDateTimeObject($row['registration_date'])->format('Y-m-d'),

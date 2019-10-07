@@ -3,6 +3,7 @@
         <div class="modal-card">
             <header class="modal-card-head flex-column">
                 <p class="modal-card-title" v-text="event.title"></p>
+                <p class="subtitle is-6 mb-0 mt-1">{{ event.id }}</p>
                 <p class="subtitle is-6">{{ location }}</p>
             </header>
             <section class="modal-card-body">
@@ -19,6 +20,10 @@
                             {{ props.row.last_name }}
                         </b-table-column>
 
+                        <b-table-column field="user.shift" label="Shift">
+                            {{ props.row.user.shift }}
+                        </b-table-column>
+
                         <b-table-column field="registration_date" label="Registered On">
                             {{ props.row.registration_date }}
                         </b-table-column>
@@ -26,7 +31,7 @@
                 </b-table>
             </section>
             <footer class="modal-card-foot">
-                <button class="button" type="button" >Close</button>
+                <button @click="$parent.close()" class="button" type="button" >Close</button>
             </footer>
         </div>
     </form>

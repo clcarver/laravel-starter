@@ -10,6 +10,6 @@ class RegistrationController extends Controller
 {
     public function show($code)
     {
-        return Registration::where('activity_code', $code)->get();
+        return Registration::with('user')->where('activity_code', $code)->get();
     }
 }
