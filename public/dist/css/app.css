@@ -5733,12 +5733,104 @@ fieldset[disabled] .button {
   padding-right: 3rem !important;
 }
 
-.mb-0 {
-  margin-bottom: 0 !important;
+.m-1 {
+  margin: 0.25rem !important;
+}
+
+.p-1 {
+  padding: 0.25rem !important;
+}
+
+.m-2 {
+  margin: 0.5rem !important;
 }
 
 .p-2 {
+  padding: 0.5rem !important;
+}
+
+.m-3 {
+  margin: 0.75rem !important;
+}
+
+.p-3 {
+  padding: 0.75rem !important;
+}
+
+.m-4 {
+  margin: 1rem !important;
+}
+
+.p-4 {
+  padding: 1rem !important;
+}
+
+.m-5 {
+  margin: 1.25rem !important;
+}
+
+.p-5 {
+  padding: 1.25rem !important;
+}
+
+.m-6 {
+  margin: 1.5rem !important;
+}
+
+.p-6 {
+  padding: 1.5rem !important;
+}
+
+.m-7 {
+  margin: 1.75rem !important;
+}
+
+.p-7 {
+  padding: 1.75rem !important;
+}
+
+.m-8 {
+  margin: 2rem !important;
+}
+
+.p-8 {
   padding: 2rem !important;
+}
+
+.m-9 {
+  margin: 2.25rem !important;
+}
+
+.p-9 {
+  padding: 2.25rem !important;
+}
+
+.m-10 {
+  margin: 2.5rem !important;
+}
+
+.p-10 {
+  padding: 2.5rem !important;
+}
+
+.m-11 {
+  margin: 2.75rem !important;
+}
+
+.p-11 {
+  padding: 2.75rem !important;
+}
+
+.m-12 {
+  margin: 3rem !important;
+}
+
+.p-12 {
+  padding: 3rem !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
 }
 
 .is-sidebar-menu {
@@ -5822,6 +5914,10 @@ fieldset[disabled] .button {
 
 .columns.is-fullheight .column {
   overflow-y: auto;
+}
+
+.is-main-content {
+  background-color: #f8f9fa;
 }
 
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */

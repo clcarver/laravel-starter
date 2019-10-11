@@ -14,13 +14,26 @@ $sides: (top, bottom, left, right); // Leave this variable alone
     }
 }
 
+@each $space in $spaces {
+    $i: index($spaces, $space);
+
+    .m-#{$i} {
+        margin: #{$space}rem !important;
+    }
+
+    .p-#{$i} {
+        padding: #{$space}rem !important;
+    }
+
+}
+
 .mb-0 {
     margin-bottom: 0 !important;
 }
 
-.p-2 {
-    padding: 2rem !important;
-}
+//.p-2 {
+//    padding: 2rem !important;
+//}
 
 .is-sidebar-menu {
     padding: 2.5rem !important;
@@ -109,4 +122,8 @@ $navbar-height: 3.25rem;
             overflow-y: auto;
         }
     }
+}
+
+.is-main-content {
+    background-color: $gray-100;
 }

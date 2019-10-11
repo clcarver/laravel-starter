@@ -4,7 +4,7 @@
 
         <div class="columns is-fullheight is-gapless">
             <div class="column is-2 is-sidebar-menu is-hidden-mobile">
-                <aside class="menu p-2">
+                <aside class="menu p-6">
                     <p class="menu-label">
                         General
                     </p>

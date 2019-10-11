@@ -21,18 +21,20 @@ class CreateCoursesTable extends Migration
             $table->string('activity_name');
             $table->string('delivery');
             $table->float('duration');
+            $table->boolean('is_safety')->default(0);
+            $table->string('type');
             $table->bigInteger('work_center_id')->index();
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
 
-        Schema::create('maps', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('name');
-            $table->bigInteger('work_center_id')->index();
-            $table->timestamp('created_at')->useCurrent();
-            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
-        });
+//        Schema::create('safety_maps', function (Blueprint $table) {
+//            $table->bigIncrements('id');
+//            $table->string('name');
+//            $table->bigInteger('work_center_id')->index();
+//            $table->timestamp('created_at')->useCurrent();
+//            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
+//        });
 
         Schema::create('documentation', function (Blueprint $table) {
             $table->bigIncrements('id');

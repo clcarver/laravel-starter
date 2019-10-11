@@ -20,6 +20,8 @@ Route::group(['middleware' => 'auth:api'], function () {
         return $request->user()->with('roles', 'permissions')->first();
     });
 
+    Route::get('/lms/users', 'LmsUserController@index');
+
     Route::patch('settings/profile', 'Settings\ProfileController@update');
     Route::patch('settings/password', 'Settings\PasswordController@update');
 

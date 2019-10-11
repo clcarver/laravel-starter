@@ -2,20 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="debb9ba2-a95b-4cd0-85ad-a79287979e82" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Assignments.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Catalog.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Exception.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/LmsUserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Encode.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RegistrationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ScheduleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ScheduleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Imports/RegistrationImport.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Imports/RegistrationImport.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ExcelUploadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ExcelUploadController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/LmsUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/LmsUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_09_24_162100_create_courses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_09_24_162100_create_courses_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/dist/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/dist/js/086c4434a3a233325158.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/js/086c4434a3a233325158.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/dist/js/6849ad2f6f614f20e015.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/js/6849ad2f6f614f20e015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/dist/js/6c8bc8d3f90a26fd0833.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/js/6c8bc8d3f90a26fd0833.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/dist/js/9328d2078435f2613143.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/js/9328d2078435f2613143.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/dist/js/979c77735ad68addd368.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/js/979c77735ad68addd368.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/dist/js/980eb908d6fdb0886aef.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/js/980eb908d6fdb0886aef.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/dist/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/modals/registrationDetails.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/modals/registrationDetails.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/pages/schedule/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/schedule/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/dist/js/bf0d409a1d67b3f4d765.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/js/bf0d409a1d67b3f4d765.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/dist/js/db17d7798c93a5140f9e.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/js/db17d7798c93a5140f9e.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/dist/js/f451cf23a139891b8374.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/js/f451cf23a139891b8374.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/welcome.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/welcome.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_helpers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_helpers.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/reports/Class_Registrations_Report.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/storage/reports/Class_Registrations_Report.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/reports/Facilities_Learning_Activity_Completion_Report.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/storage/reports/Facilities_Learning_Activity_Completion_Report.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/reports/Employee_Data_Report.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/storage/reports/Employee_Data_Report.xlsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -228,6 +241,10 @@
       <workItem from="1570101495580" duration="9223000" />
       <workItem from="1570187649791" duration="941000" />
       <workItem from="1570305009124" duration="7186000" />
+      <workItem from="1570534161101" duration="6272000" />
+      <workItem from="1570645593571" duration="1808000" />
+      <workItem from="1570713891684" duration="11918000" />
+      <workItem from="1570793043715" duration="3004000" />
     </task>
     <servers />
   </component>
