@@ -26,8 +26,8 @@ class CatalogImport implements ToModel, WithHeadingRow, WithChunkReading, WithBa
     {
         return new Catalog([
             'id' => $row['id'],
-            'parent_id' => $row['parent_id'],
-            'reference_id' => $row['reference_id'],
+            'parent_id' => $row['parent_id'] == $row['id'] ? null : $row['parent_id'],
+            'reference_id' => $row['reference_id'] == $row['parent_id'] ? null : $row['reference_id'],
             'activity_code' => $row['activity_code'],
             'activity_name' => Encode::fixUTF8($row['activity_name']),
             'activity_type' => $row['activity_type'],

@@ -28,6 +28,18 @@ class CreateCoursesTable extends Migration
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });
 
+        Schema::create('catalogs', function(Blueprint $table) {
+            $table->integer('id');
+            $table->integer('parent_id')->nullable();
+            $table->integer('reference_id')->nullable();
+            $table->string('activity_code')->nullable();
+            $table->string('activity_name');
+            $table->string('activity_type');
+            $table->integer('estimated_duration')->nullable();
+
+            $table->index(['id', 'parent_id', 'reference_id']);
+        });
+
 //        Schema::create('safety_maps', function (Blueprint $table) {
 //            $table->bigIncrements('id');
 //            $table->string('name');
@@ -81,5 +93,8 @@ class CreateCoursesTable extends Migration
         Schema::dropIfExists('courses');
         Schema::dropIfExists('required_course');
         Schema::dropIfExists('work_centers');
+        Schema::dropIfExists('catalogs');
+        Schema::dropIfExists('course_relationships');
+        Schema::dropIfExists('documentation');
     }
 }

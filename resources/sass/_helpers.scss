@@ -127,3 +127,7 @@ $navbar-height: 3.25rem;
 .is-main-content {
     background-color: $gray-100;
 }
+
+.show-overflow {
+    overflow: visible !important;
+}

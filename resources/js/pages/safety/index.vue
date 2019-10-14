@@ -8,7 +8,7 @@
                             Safety Plans
                         </h1>
 
-                        <b-button type="is-primary">New</b-button>
+                        <b-button @click="modalActive = !modalActive" type="is-primary">New</b-button>
                     </div>
 
                     <h2 class="subtitle">
@@ -55,5 +55,23 @@
             </div>
         </div>
 
+        <b-modal :active.sync="modalActive" has-modal-card scroll="keep">
+            <new-safety-plan-modal/>
+        </b-modal>
     </div>
 </template>
+
+<script>
+    import newSafetyPlanModal from "../../components/modals/newSafetyPlanModal";
+    export default {
+        components: {
+            newSafetyPlanModal
+        },
+
+        data() {
+            return {
+                modalActive: false
+            }
+        }
+    }
+</script>

@@ -20,8 +20,6 @@ Route::group(['middleware' => 'auth:api'], function () {
         return $request->user()->with('roles', 'permissions')->first();
     });
 
-    Route::get('/lms/users', 'LmsUserController@index');
-
     Route::patch('settings/profile', 'Settings\ProfileController@update');
     Route::patch('settings/password', 'Settings\PasswordController@update');
 
@@ -29,7 +27,13 @@ Route::group(['middleware' => 'auth:api'], function () {
 
     Route::get('/schedule', 'ScheduleController@index');
 
+    Route::get('/lms/course/{id}', 'LmsCourseController@show');
+
+    Route::get('/lms/users', 'LmsUserController@index');
+
     Route::get('/lms/registration/{code}', 'RegistrationController@show');
+
+    Route::get('/lms/search', 'LmsSearchController@index');
 });
 
 Route::group(['middleware' => 'guest:api'], function () {

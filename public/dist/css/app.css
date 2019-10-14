@@ -5920,6 +5920,10 @@ fieldset[disabled] .button {
   background-color: #f8f9fa;
 }
 
+.show-overflow {
+  overflow: visible !important;
+}
+
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
 
 @keyframes spinAround {
@@ -20462,6 +20466,22 @@ label.panel-block:hover {
   white-space: nowrap;
 }
 
+.dropdown.is-expanded {
+  width: 100%;
+}
+
+.dropdown.is-expanded .dropdown-trigger {
+  width: 100%;
+}
+
+.dropdown.is-expanded .dropdown-menu {
+  width: 100%;
+}
+
+.dropdown.is-expanded.is-mobile-modal .dropdown-menu {
+  max-width: 100%;
+}
+
 .dropdown:not(.is-disabled) .dropdown-menu .dropdown-item.is-disabled,
 .dropdown:not(.is-disabled) .dropdown-menu .has-link a.is-disabled {
   opacity: 0.5;
@@ -20562,6 +20582,24 @@ label.panel-block:hover {
 .taginput .field.has-addons .control .control .taginput-container.is-focusable,
 .field.has-addons .control .control .select select {
   border-radius: 0;
+}
+
+.field.has-addons .b-numberinput:not(:first-child) .control:first-child .button,
+.field.has-addons .b-numberinput:not(:first-child) .control:first-child .input,
+.field.has-addons .b-numberinput:not(:first-child) .control:first-child .taginput .taginput-container.is-focusable,
+.taginput .field.has-addons .b-numberinput:not(:first-child) .control:first-child .taginput-container.is-focusable,
+.field.has-addons .b-numberinput:not(:first-child) .control:first-child .select select {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.field.has-addons .b-numberinput:not(:last-child) .control:last-child .button,
+.field.has-addons .b-numberinput:not(:last-child) .control:last-child .input,
+.field.has-addons .b-numberinput:not(:last-child) .control:last-child .taginput .taginput-container.is-focusable,
+.taginput .field.has-addons .b-numberinput:not(:last-child) .control:last-child .taginput-container.is-focusable,
+.field.has-addons .b-numberinput:not(:last-child) .control:last-child .select select {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .field.is-floating-label {
@@ -20695,6 +20733,19 @@ label.panel-block:hover {
 }
 
 .field.is-floating-in-label.has-numberinput .b-numberinput .control .button {
+  height: 3.25em;
+}
+
+.field.is-floating-in-label.has-addons .control .button,
+.field.is-floating-in-label.has-addons .control .input,
+.field.is-floating-in-label.has-addons .control .taginput .taginput-container.is-focusable,
+.taginput .field.is-floating-in-label.has-addons .control .taginput-container.is-focusable,
+.field.is-floating-in-label.has-addons .control .select select,
+.field.is-floating-in-label.is-grouped .control .button,
+.field.is-floating-in-label.is-grouped .control .input,
+.field.is-floating-in-label.is-grouped .control .taginput .taginput-container.is-focusable,
+.taginput .field.is-floating-in-label.is-grouped .control .taginput-container.is-focusable,
+.field.is-floating-in-label.is-grouped .control .select select {
   height: 3.25em;
 }
 
@@ -21117,6 +21168,14 @@ label.panel-block:hover {
   flex-direction: column-reverse;
 }
 
+.notices.is-bottom .notification {
+  margin-bottom: 0;
+}
+
+.notices.is-bottom .notification:not(:first-child) {
+  margin-bottom: 1.5rem;
+}
+
 .notices.has-custom-container {
   position: absolute;
 }
@@ -21133,6 +21192,11 @@ label.panel-block:hover {
 }
 
 .b-numberinput.field.is-grouped div.control {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.b-numberinput.field.has-addons.is-expanded {
   flex-grow: 1;
   flex-shrink: 1;
 }
@@ -21201,6 +21265,7 @@ label.panel-block:hover {
   font-size: calc(1rem / 1.5);
   line-height: 1rem;
   font-weight: bold;
+  color: white;
 }
 
 .progress-wrapper .progress {
@@ -21220,6 +21285,10 @@ label.panel-block:hover {
 .progress-wrapper .progress.is-large + .progress-value {
   font-size: calc(1.5rem / 1.5);
   line-height: 1.5rem;
+}
+
+.progress-wrapper .progress:indeterminate::-ms-fill {
+  animation-name: none;
 }
 
 .progress-wrapper .progress::-webkit-progress-value {
@@ -21526,7 +21595,90 @@ label.panel-block:hover {
   font-size: 1.5rem;
 }
 
+.rate {
+  align-items: center;
+  display: flex;
+}
+
+.rate:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.rate.is-spaced .rate-item:not(:last-child) {
+  margin-right: 0.25rem;
+}
+
+.rate.is-disabled .rate-item {
+  cursor: initial;
+}
+
+.rate.is-disabled .rate-item:hover {
+  transform: none;
+}
+
+.rate.is-rtl .rate-item {
+  order: 1;
+}
+
+.rate.is-rtl .rate-text {
+  margin-left: 0;
+  margin-right: 0.35rem;
+}
+
+.rate .rate-item {
+  cursor: pointer;
+  display: inline-flex;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.rate .rate-item:hover {
+  transform: scale(1.1);
+}
+
+.rate .rate-item.set-on .icon,
+.rate .rate-item.set-half .is-half {
+  color: #e68900;
+}
+
+.rate .rate-item.set-half .is-half {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+.rate .icon {
+  color: #dbdbdb;
+  line-height: 1;
+  pointer-events: none;
+  width: inherit;
+}
+
+.rate .is-half > i {
+  position: absolute;
+  left: 0;
+}
+
+.rate .rate-text {
+  font-size: calc(1rem / 1.25);
+  margin-left: 0.35rem;
+}
+
+.rate .rate-text.is-small {
+  font-size: calc(0.75rem / 1.25);
+}
+
+.rate .rate-text.is-medium {
+  font-size: calc(1.25rem / 1.25);
+}
+
+.rate .rate-text.is-large {
+  font-size: calc(1.5rem / 1.25);
+}
+
 .select select {
+  text-rendering: auto !important;
   padding-right: 2.5em;
 }
 
@@ -21795,7 +21947,7 @@ MIT (https://github.com/Wikiki/bulma-steps/blob/master/LICENSE)
   margin-top: 0;
   position: relative;
   flex-grow: 1;
-  flex-basis: 0;
+  flex-basis: 1em;
 }
 
 .b-steps .steps .step-items .step-item .step-link {
@@ -22192,8 +22344,6 @@ MIT (https://github.com/Wikiki/bulma-steps/blob/master/LICENSE)
 
 .b-steps .steps .step-items .step-item:not(:first-child),
 .b-steps .steps .step-items .step-item:only-child {
-  flex-basis: 1em;
-  flex-grow: 1;
   flex-shrink: 1;
 }
 
